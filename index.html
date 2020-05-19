@@ -251,7 +251,39 @@
 
     <div id="sunday"></div>
     <script src="https://kit.fontawesome.com/c27ee983e3.js" crossorigin="anonymous"></script>
-    
+    <script>
+        let date = new Date();
+
+        let day = date.getDay();
+
+        let a = document.getElementById("today-1");
+        let b = document.getElementById("today-2");
+        let c = document.getElementById("today-3");
+        let d = document.getElementById("today-4");
+        let e = document.getElementById("today-5");
+        let f = document.getElementById("today-6");
+        let g = document.getElementById("sunday");
+        let text = `(Today)`;
+
+
+
+        if (day == 1) {
+            a.innerHTML = text;
+        } else if (day == 2) {
+            b.innerHTML = text;
+        } else if (day == 3) {
+            c.innerHTML = text;
+        } else if (day == 4) {
+            d.innerHTML = text;
+        } else if (day == 5) {
+            e.innerHTML = text;
+        } else if (day == 6) {
+            f.innerHTML = text;
+        } else {
+            g.innerHTML = "Today  is Sunday"
+        }
+    </script>
+
 </body>
 
 </html>
