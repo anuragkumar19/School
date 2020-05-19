@@ -1,0 +1,21 @@
+* {
+    margin: auto;
+}
+
+td {
+    border: 2px solid black;
+    background-color: burlywood;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media(max-width:600px) {
+    td {
+        padding: 0rem;
+        border-radius: 10px;
+    }
+}
