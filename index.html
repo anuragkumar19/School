@@ -253,10 +253,13 @@
     <div id="sunday"></div>
     <script src="https://kit.fontawesome.com/c27ee983e3.js" crossorigin="anonymous"></script>
     <script>
-        //let nameofuser =  prompt("What is your name" , Geust);
-        //let takename = document.getElementById('takename');
-        //let greet = `Hello ${nameofuser} ! Welcome ! We Collected All link on one page for your usase.`;
-         //   takename.innerHTML = greet ;
+        var person = prompt("Please enter your name", "Harry Potter");
+        
+        let greet = `Hello ${person} ! Welcome ! We Collected All link on one page for your usase`;
+        let h = document.getElementById("takename");
+            h.innerHTML = greet;
+        
+        
         let date = new Date();
 
         let day = date.getDay();
