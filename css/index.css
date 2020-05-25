@@ -15,10 +15,10 @@ h1 {
 }
 
 #takename{
-    margin-top:10px;
-    text-align:center;
-    font-wieght:bolder;
-    font-size:2rem;
+          margin-top : 10px;
+          text-align : center;
+          font-wieght : bolder;
+          font-size : 2rem;
 }
 
 @media(max-width:600px) {
