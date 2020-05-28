@@ -254,10 +254,12 @@
     <script src="https://kit.fontawesome.com/c27ee983e3.js" crossorigin="anonymous"></script>
     <script>
         //Greet Person
+        let audio = new Audio('15953_download_mesg_ting_ringtone_apple_sms_ringtones.mp3');
         var person = prompt("Please enter your name", "Guest");
         let greet = `Hello ${person} ! Welcome ! We Collected All link on one page for your usase`;           
         let h = document.getElementById("takename");
         h.innerHTML = greet;
+        audio.play();
         //takename.innerHTML = greet;
         
         
