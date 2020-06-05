@@ -5,7 +5,8 @@
 
 td {
     border: 2px solid black;
-    background-color: burlywood;
+    /*background-color: burlywood; */
+    background-image: linear-gradient(white, yellow);
     padding: 1rem;
     border-radius: 20px;
 }
