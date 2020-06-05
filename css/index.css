@@ -2,6 +2,9 @@
     margin: auto;
     font-family: 'Ubuntu', sans-serif;
 }
+body {
+    background : url(../books-690219.jpg);
+}
 
 td {
     border: 2px solid black;
