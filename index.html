@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Zoom Meating Schedule | @Saraswati Vidya Mandir, Barwat Sena, Bettiah</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="res/root.jpg" type="image/x-icon">
-    <script src="js/index.js"></script>
+    <link rel="shortcut icon" href="books-690219.jpg" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Class 9th "D" "E" & "F" (Sanskrit) zoom Meating | Saraswati Vidya Mandir Barwat Sena, Bettiah</h1>
+    <h2>Class 9th "D" "E" & "F" (Sanskrit) zoom Meating | Saraswati Vidya Mandir Barwat Sena, Bettiah</h2>
     <p id="takename"></p>
     <div class="container" id="container">
         <table class="table">
@@ -39,7 +38,7 @@
                 <!-- MONDAY  -->
 
                 <tr>
-                    <td>
+                    <td style="text-align: center;">
                         Monday <span id="today-1"></span>
                     </td>
                     <td>
@@ -73,7 +72,7 @@
                 <!-- TUESDAY -->
                 <tr>
 
-                    <td>
+                    <td style="text-align: center;">
                         Tuesday <span id="today-2"></span>
                     </td>
                     <td>
@@ -109,7 +108,7 @@
 
                 <!-- Wednesday  -->
                 <tr>
-                    <td>
+                    <td style="text-align: center;">
                         Wednesday <span id="today-3"></span>
                     </td>
                     <td>
@@ -142,7 +141,7 @@
 
                 <!-- Thurusday -->
                 <tr>
-                    <td>
+                    <td style="text-align: center;">
                         Thurusday <span id="today-4"></span>
                     </td>
                     <td>
@@ -176,7 +175,7 @@
                 <!-- Friday  -->
                 <tr>
 
-                    <td>
+                    <td style="text-align: center;">
                         Friday <span id="today-5"></span>
                     </td>
                     <td>
@@ -209,7 +208,7 @@
 
                 <!-- Saturday  -->
                 <tr>
-                    <td>
+                    <td style="text-align: center;">
                         Saturday <span id="today-6"></span>
                     </td>
                     <td>
@@ -233,7 +232,7 @@
                         <br>
                         <i class="fa fa-star"></i>Zoom Id: 933 582 6491
                         <br>
-                        <i class="fa fa-star"></i>Zoom Password:  123456
+                        <i class="fa fa-star"></i>Zoom Password: 123456
 
                     </td>
 
@@ -249,23 +248,21 @@
 
 
     </div>
-*Updated 5 June At 10:06 PM
-
-
+    <p id="upd">*Updated 5 June At 10:06 PM</p>
     <div id="sunday"></div>
+
+    <!-- Font Awesome JavaScripts -->
     <script src="https://kit.fontawesome.com/c27ee983e3.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript  -->
     <script>
-        //Greet Person
-        let audio = new Audio('15953_download_mesg_ting_ringtone_apple_sms_ringtones.mp3');
+        //Greet Person        
         var person = prompt("Please enter your name", "Guest");
-        let greet = `Hello ${person} ! Welcome ! We Collected All link on one page for your usase`;           
+        let greet = `Hello ${person} ! Welcome ! We Collected All link on one page for your usase`;
         let h = document.getElementById("takename");
-        h.innerHTML = greet;
-        audio.play();
-        //takename.innerHTML = greet;
-        document.cookie="person= person ; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
-        
-        
+        h.innerText = greet;
+
+        // Day Controll 
         let date = new Date();
 
         let day = date.getDay();
