@@ -52,3 +52,17 @@ th {
 p{
    color: white;
 }
+
+.Facebook-by-AnuragKumar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+} 
+
+.Facebook-by-AnuragKumar span a {
+    hieght:20px;
+    width:40px;
+    background:blue;
+    border-radius:5px;
+    
+}
