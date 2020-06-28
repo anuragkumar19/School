@@ -60,9 +60,11 @@ p{
 } 
 
 .Facebook-by-AnuragKumar span a {
+    text-decoration:none;    
     hieght:20px;
     width:40px;
     background:blue;
+    color:white;
     border-radius:5px;
     
 }
