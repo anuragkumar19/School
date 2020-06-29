@@ -14,6 +14,10 @@
       <div class="alert alert-success" role="alert">
          Facebook like,share and Comment added—check it out!
       </div>
+      <div class="alert alert-success" role="alert">
+        Please Reload and Enter Your name last time | If there it is not asking or you entered wrong name clear your name here....
+          <button class="btn" onclick="clearstorage()">Clear Storage</button>
+      </div>
     <h2>Class 9th "D" "E" & "F" (Sanskrit) zoom Meating | Saraswati Vidya Mandir Barwat Sena, Bettiah</h2>
     <p id="takename"></p>
   
@@ -325,6 +329,10 @@ if (name == "Guest") {
         } else {
             alert("Today Is Sunday")
         }
+        
+        function clearstorage() {
+  localStorage.removeItem("name");
+}
     </script>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="h07Axgzg"></script>
