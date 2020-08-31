@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head id="head">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Zoom Meating Schedule | @Saraswati Vidya Mandir, Barwat Sena, Bettiah</title>
     <link rel="shortcut icon" href="books-690219.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css" integrity="sha384-HnTY+mLT0stQlOwD3wcAzSVAZbrBp141qwfR4WfTqVQKSgmcgzk+oP0ieIyrxiFO" crossorigin="anonymous">
+    <link id="btstyle" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/superhero/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script>
+        //localStorage.theme = 'L';
+        let currTheme = localStorage.theme || 'D';
+        let head = document.getElementById('head');
+        let linkTag = document.getElementById('btstyle');
+        if (currTheme == 'L') {
+            linkTag.href = 'https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/united/bootstrap.min.css';
+        }
+    </script>
+    <style>
+        #theme-tooggler {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
 
 </head>
 
@@ -267,19 +283,27 @@
     <!-- temp -->
 
     <p id="upd" class="text-muted text-small">
-        *Updated 13 June At 8:14 AM
+        *Updated 31 August At 8:14 AM
     </p>
     <div id="sunday"></div>
+    <button id="theme-tooggler" class="d-flex justify-content-center align-items-center btn m-3 p-2 btn-secondary rounded-circle"><i class="fas fa-sun fa-2x"></i></button>
+
 
 
 
     <!-- JavaScript  -->
     <script>
-        //alert ("Yogeshwar Guruji Extra meeting is helding on 1 PM 13 June.  Check it out on the last of page now")
-        //Greet Person
-        //var person = prompt("Please enter your name", "Guest");
+        let themeTooggler = document.getElementById('theme-tooggler');
 
-
+        themeTooggler.addEventListener('click', e => {
+            if (currTheme == 'D') {
+                localStorage.theme = 'L';
+                location.reload()
+            } else {
+                localStorage.theme = 'D';
+                location.reload()
+            }
+        })
         let name = localStorage.name;
         console.log(name)
 
